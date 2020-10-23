@@ -1,0 +1,10 @@
+{ "reg": [
+    { "name": "D", "bits": 1, "attr": "", "type":6 },
+    { "name": "L", "bits": 1, "attr": "", "type":5 },
+    { "name": "E", "bits": 1, "attr": "", "type":4 },
+    { "name": "I", "bits": 1, "attr": "", "type":3 },
+    { "name": "F", "bits": 1, "attr": "", "type":2 },
+    { "name": "T", "bits": 1, "attr": "", "type":1 },
+    { "name": "I", "bits": 1, "attr": "", "type":0 },
+    { "name": "B", "bits": 1, "attr": "" }
+]}

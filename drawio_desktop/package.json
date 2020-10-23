@@ -1,0 +1,28 @@
+{
+	"name": "drawio-plugin-wavedrom",
+	"displayName": "Draw.io: WaveDrom plugin",
+	"description": "WaveDrom plugin for Draw.io Desktop",
+	"version": "0.0.0",
+	"license": "GPL-3.0",
+	"publisher": "nopeslide",
+	"repository": "https://github.com/nopeslide/drawio_wavedrom_plugin",
+	"readme": "./README.md",
+	"scripts": {
+		"webpack:production": "webpack --mode production",
+		"webpack:development": "webpack --mode development",
+		"build": "npm run webpack:production",
+		"dev": "npm run webpack:development"
+	},
+	"devDependencies": {
+		"bit-field": "^1.3.6",
+		"buffer": "^5.6.0",
+		"jsonschema": "^1.4.0",
+		"raw-loader": "^4.0.2",
+		"stream-browserify": "^3.0.0",
+		"url": "^0.11.0",
+		"wavedrom": "^2.6.8",
+		"wavedrom-schema": "^0.3.2",
+		"webpack": "^5.2.0",
+		"webpack-cli": "^4.1.0"
+	}
+}
