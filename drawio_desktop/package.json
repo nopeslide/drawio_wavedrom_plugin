@@ -15,7 +15,7 @@
 	},
 	"devDependencies": {
 		"bit-field": "^1.3.6",
-		"buffer": "^5.6.0",
+		"buffer": "^6.0.3",
 		"jsonschema": "^1.4.0",
 		"raw-loader": "^4.0.2",
 		"stream-browserify": "^3.0.0",
