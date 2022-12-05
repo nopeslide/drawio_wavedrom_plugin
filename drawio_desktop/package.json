@@ -23,6 +23,6 @@
 		"wavedrom": "^2.6.8",
 		"wavedrom-schema": "^0.3.2",
 		"webpack": "^5.2.0",
-		"webpack-cli": "^4.1.0"
+		"webpack-cli": "^5.0.1"
 	}
 }
