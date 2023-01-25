@@ -20,7 +20,7 @@
 		"raw-loader": "^4.0.2",
 		"stream-browserify": "^3.0.0",
 		"url": "^0.11.0",
-		"wavedrom": "^2.6.8",
+		"wavedrom": "^3.1.1",
 		"wavedrom-schema": "^0.3.2",
 		"webpack": "^5.2.0",
 		"webpack-cli": "^4.1.0"
