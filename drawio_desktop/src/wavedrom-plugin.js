@@ -3,6 +3,7 @@ import './shapes/shapeBitfield'
 import "./palettes/wavedrom/paletteWavedrom";
 import waveschema from 'wavedrom-schema/waveschema.json'
 import jsonschema from 'jsonschema'
+import json5 from 'json5'
 
 /**
  * Constructs a new parse dialog.
@@ -74,7 +75,7 @@ var DialogWavedrom = function (editorUi, shape) {
             let validator = new jsonschema.Validator();
             let json = undefined
             try {
-                json = JSON.parse(textarea.value);
+                json = json5.parse(textarea.value);
             } catch(e) {
                 console.log(e);
                 parserStatus.innerHTML = "could not be parsed as json";
