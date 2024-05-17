@@ -1,5 +1,7 @@
 import bitfield from 'bit-field'
 import onml from 'onml'
+import json5 from 'json5'
+
 /**
 * Extends mxShape.
 */
@@ -49,9 +51,9 @@ mxShapeWavedromBitfield.prototype.updateImage = function () {
 		fontsize:this.style.fontSize,
 		fontfamily:this.style.fontFamily,
 	}
-	
+
 	try {
-		var jsonml = bitfield.render(JSON.parse(this.state.cell.value).reg,options);
+		var jsonml = bitfield.render(json5.parse(this.state.cell.value).reg,options);
 		this.image = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(onml.stringify(jsonml))));
 		this.error = '';
 	} catch (err) {

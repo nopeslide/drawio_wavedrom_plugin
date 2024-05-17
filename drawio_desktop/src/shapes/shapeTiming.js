@@ -3,6 +3,7 @@ import render from 'wavedrom/lib'
 import def from 'wavedrom/skins/default.js'
 import narrow from 'wavedrom/skins/narrow.js'
 import lowkey from 'wavedrom/skins/lowkey.js'
+import json5 from 'json5'
 
 /**
 * Extends mxShape.
@@ -32,7 +33,7 @@ mxShapeWavedromTiming.prototype.customProperties = [
 mxShapeWavedromTiming.prototype.updateImage = function () {
 	try {
 		var skins = Object.assign({}, def, narrow, lowkey);
-		var jsonml = render.renderAny(0,JSON.parse(this.state.cell.value),skins);
+		var jsonml = render.renderAny(0,json5.parse(this.state.cell.value),skins);
 		jsonml[1].viewBox = "-30 0 "+ jsonml[1].width + " " + jsonml[1].height;
 		this.image = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(onml.stringify(jsonml))));
 		this.error = '';
