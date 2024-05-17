@@ -1,5 +1,6 @@
 import './shapes/shapeTiming'
 import './shapes/shapeBitfield'
+import './shapes/shapeSchematic'
 import "./palettes/wavedrom/paletteWavedrom";
 import waveschema from 'wavedrom-schema/waveschema.json'
 import jsonschema from 'jsonschema'
