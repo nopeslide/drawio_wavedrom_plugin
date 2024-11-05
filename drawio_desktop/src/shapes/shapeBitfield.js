@@ -31,6 +31,8 @@ mxShapeWavedromBitfield.prototype.customProperties = [
 	{ name: 'bits', dispName: 'Number of Fields', type: 'int', min:1, max:1024, defVal: 8 },
 	{ name: 'compact', dispName: 'Compact', type: 'boolean', defVal: false },
 	{ name: 'bigendian', dispName: 'Big Endian', type: 'boolean', defVal: false },
+	{ name: 'hflip', dispName: 'Horizontal Flip', type: 'boolean', defVal: true },
+	{ name: 'vflip', dispName: 'Vertical Flip', type: 'boolean', defVal: true },
 ];
 
 mxShapeWavedromBitfield.prototype.updateImage = function () {
@@ -40,6 +42,8 @@ mxShapeWavedromBitfield.prototype.updateImage = function () {
 	var bits   = parseInt(mxUtils.getValue(this.style, 'bits', '8'));
 	var compact = mxUtils.getValue(this.style, 'compact', false);
 	var bigendian = mxUtils.getValue(this.style, 'bigendian', false);
+	var hflip = mxUtils.getValue(this.style, 'hflip', false);
+	var vflip = mxUtils.getValue(this.style, 'vflip', false);
 
 	var options = {
 		vspace:vspace,
@@ -50,6 +54,8 @@ mxShapeWavedromBitfield.prototype.updateImage = function () {
 		bigendian:bigendian,
 		fontsize:this.style.fontSize,
 		fontfamily:this.style.fontFamily,
+        hflip:hflip,
+        vflip:vflip,
 	}
 
 	try {
